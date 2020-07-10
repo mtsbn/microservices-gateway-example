@@ -1,0 +1,31 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/typicode/demo/posts",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "my-json-server.typicode.com",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v2/posts",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/typicode/demo/comments",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "my-json-server.typicode.com",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v2/comments",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    }
+  ],
+
+  "GlobalConfiguration": {
+  }
+}
