@@ -2,3 +2,5 @@
 
 extra_hosts:
 - "jsonserver:http://my-json-server.typicode.com"
+- "dynamo:192.168.0.33:32777"
+- "login:localhost:62371"
