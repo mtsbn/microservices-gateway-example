@@ -1,0 +1,4 @@
+﻿version: '3'
+
+extra_hosts:
+- "jsonserver:http://my-json-server.typicode.com"
